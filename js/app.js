@@ -324,8 +324,7 @@ Ocean.prototype.initSprites = function () {
                 var context = canvas.getContext( '2d' );
                 var gradient = context.createRadialGradient( canvas.width / 2, canvas.height / 2, 0, canvas.width / 2, canvas.height / 2, canvas.width / 2 );
                 gradient.addColorStop( 0, 'rgba(70,115,120,0.3)' );
-                //gradient.addColorStop( 0.2, 'rgba(0,255,255,1)' );
-                gradient.addColorStop( 1, 'rgb(70,115,120, 0.3)' );
+                gradient.addColorStop( 1, 'rgba(70,115,120,0.3)' );
                 gradient.addColorStop( 1, 'rgba(0,0,0,0)' );
                 context.fillStyle = gradient;
                 context.fillRect( 0, 0, canvas.width, canvas.height );
